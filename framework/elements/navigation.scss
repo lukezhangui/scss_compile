@@ -1,0 +1,28 @@
+﻿.sub-nav{
+	display:block;
+
+	> ul{padding:0;}
+	
+	> ul li{
+		display:inline-block;
+		list-style-type:none;
+		border-bottom:2px solid transparent;
+		margin:20px 20px 0 20px;
+		padding-bottom:10px;
+
+		&:first-child{margin-left:0;}
+
+		&.active{border-bottom:2px solid $color-primary-lightgreen;
+		
+			&:hover{border-bottom:2px solid $color-primary-lightgreen}
+		}
+			
+		&:hover{border-bottom:2px solid $color-border}
+
+		> a{
+			text-transform:uppercase;
+			font-family:$font-stack-header-med;
+			text-decoration:none;
+		}
+	}
+	}

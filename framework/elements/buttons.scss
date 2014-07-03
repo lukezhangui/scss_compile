@@ -1,0 +1,130 @@
+﻿/************** BUTTONS *************/
+
+@mixin btn ($padding: 4px 10px, $font-size: 12px, $font-weight: 500, $border:1px solid $color-secondary-darkergreen){
+	border-radius:4px;
+    color: #FFFFFF;
+    font-size: $font-size;
+    font-weight: 500;
+    font-family:$font-stack-header-med;
+	text-decoration: none;
+	text-transform: uppercase;
+    white-space: nowrap;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: subpixel-antialiased;
+    cursor: pointer;
+    margin: 0;
+	padding:$padding;
+	border:$border;
+	@include transition (all .2s ease);
+	//@include single-transition($property: all, $duration: .2s, $function: ease, $delay: 0);
+    -webkit-appearance:none;
+    display:inline-block;
+    
+	&:hover {text-decoration:none;}
+
+	&:focus {text-decoration:none;
+			 outline:1px dotted #525252;}
+    }
+
+.btn1{
+	@include btn($border:1px solid $color-secondary-darkergreen);
+	@include linear-gradient(to bottom, $color-primary-lightgreen 1%, $color-secondary-darkergreen 100%);
+
+	&:hover{
+	@include linear-gradient(to bottom, $color-primary-lightgreen 0%, $color-primary-lightgreen 25%,$color-secondary-darkergreen 100%);
+	}
+
+	&:active{
+	@include linear-gradient(to bottom, $color-primary-lightgreen 1%, $color-secondary-darkergreen 100%);
+	}
+}
+
+.btn2{
+	@include btn($border:1px solid $color-tertiary-burntorange);
+	@include linear-gradient(to bottom, $color-tertiary-orange 1%, $color-tertiary-burntorange 100%);
+
+	&:hover{
+	@include linear-gradient(to bottom, $color-tertiary-orange 0%, $color-tertiary-orange 25%,$color-tertiary-burntorange 100%);
+
+	}
+
+	&:active{
+	@include linear-gradient(to bottom, $color-tertiary-orange 1%, $color-tertiary-burntorange 100%);
+	}
+}
+
+.btn3{
+	@include btn($border:1px solid $color-secondary-lightblue);
+	@include linear-gradient(to bottom, $color-secondary-darkblue 1%, $color-secondary-lightblue 100%);
+
+	&:hover{
+	@include linear-gradient(to bottom, $color-secondary-darkblue 0%, $color-secondary-darkblue 25%,$color-secondary-lightblue 100%);
+
+	@include background-image(linear-gradient(to bottom, $color-secondary-darkblue 0%, $color-secondary-darkblue 25%,$color-secondary-lightblue 100%));
+	}
+
+	&:active{
+	@include linear-gradient(to bottom, $color-secondary-darkblue 1%, $color-secondary-lightblue 100%);
+	}
+}
+
+.btn4{
+	@include btn($border:1px solid $color-secondary-darkergreen);
+	background:#fff;
+	color:$color-secondary-darkergreen !important;
+}
+
+.btn-sml{
+	@include btn($padding:3px 5px, $font-size:10px, $border:1px solid inherit);
+}
+
+.btn-lrg{
+	@include btn($padding:6px 15px, $font-size:14px,$border:1px solid inherit);
+}
+
+.btn-xlrg{
+	@include btn($padding:10px 20px, $font-size:18px, $font-weight:700,$border:1px solid inherit);
+	text-shadow:0 1px 1px #555555;
+}
+
+.btn-block{
+	@include btn;
+	width:90%;
+	text-align:center;
+}
+
+.btn1.disabled,.btn2.disabled,.btn3.disabled,
+.btn1.disabled:hover,.btn2.disabled:hover,.btn3.disabled:hover,
+.btn1.disabled:active,.btn2.disabled:active,.btn3.disabled:active{
+    background: #efefef;
+    border:1px solid $color-border;
+    cursor:not-allowed;
+    color: $color-body!important;
+    text-shadow: none;
+    } 
+	
+.btn-group-horizontal{
+    display:block;
+}
+
+.btn-group-horizontal [class^="btn"]{
+    display:inline-block;
+    float:left;
+    margin:0;
+    border-radius:0;
+    background-color:inherit;
+    border-right-width:0;
+
+	&:first-of-type{
+    border-radius:4px 0 0 4px;
+	}
+
+	&:last-of-type{
+    border-radius:0 4px 4px 0;
+    border-right-width:1px;
+	} 
+}
+
+
+
+	

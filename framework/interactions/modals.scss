@@ -1,0 +1,53 @@
+﻿#simplemodal-container{
+	border: 3px solid #69BE28;
+	}
+
+#simplemodal-overlay { 
+	background-color:#FFF;
+	}
+
+#simplemodal-data{
+	padding-top:40px;
+	}
+
+#simplemodal-overlay:hover{
+	cursor:not-allowed;
+	}
+
+#basic-modal-content {
+	display:none;
+	}
+
+#simplemodal-container {
+	background-color: #FFF;
+	overflow:auto;
+	padding:10px;
+	z-index:1;
+	}
+
+.simplemodal-wrap{
+	height: auto !important;
+	}
+
+.simplemodal-close {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	text-decoration:none;
+	cursor: pointer;
+}
+
+.modal-header{
+	position: absolute;
+	left: 20px;
+	top:12px;
+}
+
+.worko-modal .btn1 {
+margin: 20px;
+position: absolute;
+bottom: 20px;
+right: 20px;
+}
+
+

@@ -1,0 +1,179 @@
+﻿/************************************
+**************** TABS ***************
+************************************/
+
+/*!
+ * Bootstrap v2.3.2
+ *
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */
+ 
+ .worko-tab-container,worko-tab-container-borderless{margin:2em 0;}
+ 
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.nav {
+  margin-left: 0;
+  margin-bottom: 20px;
+  list-style: none;
+}
+.nav > li > a {
+  display: block;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: lighten(#ccc, 10%);
+  color:#525252;
+
+}
+
+.nav-tabs{
+	padding:0;
+  *zoom: 1;
+}
+.nav-tabs:before,
+.nav-tabs:after{
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.nav-tabs:after{
+  clear: both;
+}
+.nav-tabs > li{
+  float: left;
+  list-style-type:none !important;
+}
+.nav-tabs > li > a{
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-right: 2px;
+  line-height: 14px;
+}
+.nav-tabs {
+  border-bottom: 1px solid #ccc;
+}
+.nav-tabs > li {
+  margin-bottom: -1px;
+}
+
+.nav-tabs > li.active{
+    border-left:10px solid #69be28;
+}
+.nav-tabs > li > a {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  line-height: 20px;
+  border: 1px solid transparent;
+  color:#ccc;
+  font-weight: bold;
+  @include font-size(1.6);
+  text-transform: uppercase;
+  font-family:$font-stack-header-med;
+  text-decoration:none;
+  border-left:10px solid transparent;
+ // @include transition (all .1s linear);
+  
+}
+.nav-tabs > li > a:hover,
+.nav-tabs > li > a:focus {
+ //@include transition (all .3s linear);
+  border-left-color: lighten($color-header, 40%);
+}
+.nav-tabs > .active > a,
+.nav-tabs > .active > a:hover,
+.nav-tabs > .active > a:focus {
+  color: #525252;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-bottom-color: transparent;
+  cursor: default;
+  border-left:10px;
+}
+
+
+.tabbable {
+  *zoom: 1;
+}
+.tabbable:before,
+.tabbable:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.tabbable:after {
+  clear: both;
+}
+.tab-content {
+  overflow: auto;
+  margin-top: -20px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.tab-content > .tab-pane{
+  display: none;
+  padding:20px;
+}
+.tab-content > .active{
+  display: block;
+}
+
+.worko-tab-container-borderless{
+	.nav-tabs{
+		border-bottom:none;
+	}
+
+	.nav-tabs > li.active{
+		border-left:none;
+		border-bottom:2px solid $color-tertiary-purple;	
+	}
+
+	.nav-tabs > li > a{
+		border:none;
+	}
+
+	.nav-tabs > .active > a,
+	.nav-tabs > .active > a:hover,
+	.nav-tabs > .active > a:focus{
+		border:none;
+		}
+
+	.nav-tabs > li:hover, 
+	.nav-tabs > li:focus {
+	border-bottom:2px solid $color-body;
+	}
+
+	.tab-content{border:none;}
+}

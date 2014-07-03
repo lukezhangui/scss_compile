@@ -1,0 +1,13 @@
+﻿//The font-size mixin spits out both the pixel value and rem value based on the number passed to the mixin. 
+//for example, h1{@include font-size(3.6);} will produce font-size:36px; and font-size:3.6rem;. 
+//Older browsers that don't support REM will default to the pixel value
+
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+
+// Reusable list of html headings
+$headings-list: h1,h2,h3,h4,h5,h6;
+

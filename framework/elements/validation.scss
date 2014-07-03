@@ -1,0 +1,88 @@
+﻿/* styles for validation helpers */
+.field-validation-error {
+	color: #e80c4d;
+	font-weight: bold;
+}
+
+.field-validation-valid {
+	display: none;
+}
+
+input.input-validation-error {
+	border: 1px solid #e80c4d;
+}
+
+input[type="checkbox"].input-validation-error {
+	border: 0 none;
+}
+
+.validation-summary-errors {
+	color: #e80c4d;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+.validation-summary-valid {
+	display: none;
+}
+
+
+/* Error Messages
+----------------------------------------------------------*/
+
+.field-validation-error{
+	color: #D2492A;
+	clear:both;
+	}
+
+.field-validation-valid{
+	display: none;
+	}
+
+.input-validation-error {
+	border: 1px solid #D2492A !important;
+	background-color: #FFFAF2;
+}
+
+input.input-validation-error:focus {
+	box-shadow: inset 0 0 0 1px #D2492A;
+	background-color: #FFFAF2;
+}
+
+.validation-summary-errors {
+	font-weight: bold;
+	color: #D2492A;
+}
+
+.validation-summary-errors ul{
+	font-weight: bold;
+	color: #D2492A;
+	margin:0;
+	padding:0;
+}
+
+.validation-summary-errors li{
+	font-weight: bold;
+	color: #D2492A;
+	list-style:none;
+	border: 1px solid;
+	padding: 10px;
+}
+
+.validation-summary-valid {
+	display: none;
+}
+
+.validation-error-icon{
+	padding:5px 10px 5px 27px;
+	background: url(/assets/images/icons/exclaimation/exclaimation_red16_over.png) no-repeat scroll 5px center #FFFFFF; 
+	display: block;
+	border:1px solid #D2492A;
+	}
+
+.browser-validation{
+	border: 1px solid #D2492A;
+	margin-top: 20px;
+	padding: 20px 10px 20px 55px;
+	background: url(/assets/images/icons/exclaimation/exclaimation_red32_over.png) no-repeat 10px #FFFAF2;
+}
