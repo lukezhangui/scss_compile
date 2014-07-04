@@ -1,8 +1,9 @@
 {
-    "name": "your-app",
+    "name": "scss_compiler",
     "version": "0.0.1",
     "scripts": {
         "watch_and_build_scss": "gulp",
-        "build_scss": "gulp styles"
+        "build_scss": "gulp styles",
+        "build_scss_no_sourcemap": "gulp styles_no_sourcemap"
     }
 }
