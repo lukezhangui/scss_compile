@@ -7,6 +7,7 @@ Create a portable version of scss compiler using gulp-scss and gulp.js. This wou
 ## Get started
 - Double click the 'continously_build_scss.bat' and you're good to go
 - For server builds, run the "build_scss_once.bat"
+- In visual studios, go to tools -> external tools -> add the 'continously_build_scss.bat'. Now it's accessible via menu items
 
 ## How this works
 - This uses a standalone build of NodeJS, NPM (Node package manager), and GulpJS to run Node-sass
