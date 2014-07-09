@@ -5,9 +5,11 @@
         "watch_and_build_scss": "gulp",
         "build_scss": "gulp styles",
         "build_scss_no_sourcemap": "gulp styles_no_sourcemap"
-    },
-    "dependencies": {
-      "gulp": "~3.8.5",
-      "gulp-sass": "~0.7.2"
     }
+    // "dependencies": {
+    //   "gulp": "~3.8.5",
+    //   "gulp-sass": "~0.7.2"
+    // }
+    // USING NPM INSTALL will install dependencies with filenames that are too long to be compatible with windows.
+    // Recommend reading README to figure out how to update dependencies until NPM release compatibility fix for windows.
 }
