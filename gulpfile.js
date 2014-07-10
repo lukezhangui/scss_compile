@@ -3,6 +3,7 @@ var gulp = require('gulp'),
 sass = require('gulp-sass');
 
 // settings
+var watch_folder = './framework/**/*';
 var target_scss = './framework/standard.scss'; //path to the scss file or files you want to compile
 var output_path = 'compiled/'; //path to the output folder
 
@@ -11,7 +12,7 @@ gulp.task('default', ['watch', 'styles']);
 
 // Watch and build task
 gulp.task('watch', function() {
-  gulp.watch('./framework/standard.scss', ['styles']);
+  gulp.watch(watch_folder, ['styles']);
 });
 
 // Styles
